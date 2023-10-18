@@ -1,0 +1,1939 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url('./assets/bg-images/background-image.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+header {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menu-box {
+    width: 100%;
+    height: auto;
+    border-top:1px solid #a4a4a4;
+    border-bottom:1px solid #a4a4a4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .4s;
+}
+.contact-box p {
+    color: white;
+}
+.menu {
+    display: flex;
+
+}
+.menu a {
+    text-decoration: none;
+    color: #a4a4a4;
+}
+.menu ul {
+    display: flex;
+}
+.menu li {
+    margin-right: 40px;
+}
+.menu li a {
+    
+}
+.contact-box {
+    display: flex;
+}
+.contact-box > div {
+    width: 50%;
+    height: auto;
+    text-align: right;
+    position: relative;
+    
+}
+.menu li  a {
+    transition: .4s
+}
+.menu li:hover  a{
+  color: white;
+}
+.logo span {
+    color: white;
+    font-size: 60px;
+    letter-spacing: 13px;
+    font-weight: 100;
+}
+.social-logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.social-logo-box li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-logo-box a {
+    display: block;
+    padding: 19px;
+    color: #a4a4a4;
+    transition: .4s;
+}
+
+.social-logo-box a:hover {
+    color: white;
+    filter: drop-shadow(0px 0px 5px 15px white);
+}
+
+
+
+
+.About_Box {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.header-social-logo>div:hover a i {
+    color: white;
+}
+
+
+
+.header-menu-btn .menu-box div:hover>a {
+    color: gray;
+}
+
+.fa-regular {
+    color: gray;
+}
+
+.header-social-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.header-social-logo>div {
+    width: auto;
+    height: auto;
+
+
+}
+
+
+.info {
+    width: auto;
+    height: auto;
+}
+
+.info>div:first-child {
+    color: gray;
+    font-size: 15px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
+}
+
+.info>div:nth-child(2) {
+    color: white;
+    font-size: 70px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-weight: 100;
+    width: 489px;
+    margin-top: 20px;
+    word-spacing: 19px;
+    letter-spacing: 7px;
+}
+
+.info>div:nth-child(3) {
+    color: gray;
+    font-size: 23px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    margin-top: 20px;
+    font-weight: 100;
+}
+
+.info>div:last-child {
+    margin-top: 20px;
+}
+
+.info>div:nth-child(2) {
+    opacity: 0;
+    animation: visible 1s forwards;
+    animation-delay: .2s;
+}
+
+.info>div:nth-child(3) {
+    opacity: 0;
+    animation: visible 1s forwards;
+    animation-delay: .4s;
+}
+
+.info>div:last-child {
+    opacity: 0;
+    animation: visible 1s forwards;
+    animation-delay: .6s;
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.info>div:last-child>a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-weight: 100;
+    letter-spacing: 3px;
+    transition: .3s ease;
+
+}
+
+.info>div:first-child {
+    animation: move 400ms forwards ease;
+}
+
+.info>div:last-child>a:hover {
+    color: gray;
+    border-color: gray;
+}
+
+.mars-big-icon {
+    background: url('./assets/bg-images/mars-header.png');
+    width: 900px;
+    height: 900px;
+    background-size: cover;
+    background-position: left -68px top 40px;
+    transition: .7s ease;
+    animation: mars-rotate 10s infinite linear;
+
+
+}
+
+@keyframes mars-rotate {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.horoscope {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.parent-hor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1221px;
+    height: auto;
+
+}
+
+.parent-hor>div {
+    transition: .4s;
+}
+
+.parent-hor>div:hover {
+    transform: scale(1.3);
+}
+
+.horoscope>.parent-hor>div {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.horoscope .parent-hor>div:first-child>div:first-child {
+    background: url('./assets/icons/icon-1.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.horoscope .parent-hor>div:nth-child(2)>div:first-child {
+    background: url('./assets/icons/icon-2.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.horoscope .parent-hor>div:nth-child(3)>div:first-child {
+    background: url('./assets/icons/icon-3.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.horoscope .parent-hor>div:nth-child(4)>div:first-child {
+    background: url('./assets/icons/icon-4.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.horoscope .parent-hor>div:nth-child(5)>div:first-child {
+    background: url('./assets/icons/icon-5.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.horoscope .parent-hor>div:nth-child(6)>div:first-child {
+    background: url('./assets/icons/icon-6.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.horoscope .parent-hor>div:nth-child(7)>div:first-child {
+    background: url('./assets/icons/icon-7.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.horoscope .parent-hor>div:nth-child(8)>div:first-child {
+    background: url('./assets/icons/icon-8.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.horoscope .parent-hor>div:nth-child(9)>div:first-child {
+    background: url('./assets/icons/icon-9.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.horoscope .parent-hor>div:nth-child(10)>div:first-child {
+    background: url('./assets/icons/icon-10.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.horoscope .parent-hor>div:nth-child(11)>div:first-child {
+    background: url('./assets/icons/icon-11.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.horoscope .parent-hor>div:last-child>div:first-child {
+    background: url('./assets/icons/icon-12.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.horoscope .parent-hor>div>div:last-child {
+    color: #a4a4a4;
+    font-size: 17px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 300;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.horoscope .parent-hor>div>div:nth-child(2) {
+    color: #ffffff;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.moon {
+
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+
+
+.info-2 {
+    width: 400px;
+    height: auto;
+}
+
+.info-2>div:first-child {
+    color: #fff;
+    font-family: roboto mono, sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.info-2>div:nth-child(2) {
+    color: #fff;
+    font-family: roboto mono, sans-serif;
+    font-size: 70px;
+    line-height: 80px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    width: 488px;
+    margin-top: 10px;
+}
+
+.info-2>div:nth-child(3) {
+    color: #ffffff9a;
+    font-size: 20px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 300;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    margin-top: 20px;
+}
+
+.info-2>div:last-child {
+    color: white;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.info-2>div:last-child>a {
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    color: white;
+    padding-bottom: 5px;
+    transition: .5s;
+}
+
+.info-2>div:last-child:hover>a {
+    color: gray;
+    border-color: gray;
+}
+
+.moon-main-image {
+    background: url('./assets/bg-images/moon-image.png');
+    width: 350px;
+    height: 400px;
+    background-size: cover;
+    transition: .5s ease;
+}
+
+.moon-main-image:hover {
+    transform: scale(1.1);
+}
+
+.planets-list {
+    width: 100%;
+    height: 1000px;
+    box-sizing: border-box;
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+.planets-list>div {
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    overflow: hidden;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+}
+
+.planets-list>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+}
+
+.planets-list>div>div:first-child:hover span {
+    opacity: 1;
+
+}
+
+.planets-list>div>div span {
+    opacity: 0;
+    transition: 0.4s;
+    font-size: 20px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.planets-list>div>div:first-child {
+    transition: 1s;
+}
+
+.planets-list>div:first-child {
+    left: 90px;
+    top: 20px;
+}
+
+
+
+.planets-list span {
+    border-bottom: 1px solid white;
+    opacity: 0;
+}
+
+.planets-list>div:hover span {
+    opacity: 1;
+}
+
+.planets-list>div:nth-child(2) {
+    left: 400px;
+    top: 30px;
+}
+
+.planets-list>div:nth-child(3) {
+    left: 1000px;
+    top: 50px;
+}
+
+.planets-list>div:nth-child(4) {
+    left: 1300px;
+    top: 300px;
+}
+
+.planets-list>div:nth-child(5) {
+    left: 1650px;
+    top: 450px;
+}
+
+.planets-list>div:nth-child(6) {
+    left: 170px;
+    top: 450px;
+}
+
+
+
+.planets-list>div:nth-child(7) {
+    left: 570px;
+    top: 450px;
+    width: 300px;
+    height: 300px;
+}
+
+.planets-list>div:nth-child(8) {
+    left: 1100px;
+    top: 550px;
+}
+
+.planets-list>div:hover>div:first-child {
+    transform: rotate(30deg);
+}
+
+.planets-list>div:nth-child(9):hover~div:last-child>div:first-child {
+    transform: rotate(30deg) scale(0.6);
+
+}
+
+.planets-list>div:first-child:hover>div:first-child {
+    transform: rotate(30deg) scale(1.1);
+}
+
+.planets-list>div:nth-child(9) {
+    left: 520px;
+    top: 240px;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.planets-list>div:nth-child(9)>div span {
+    position: absolute;
+
+}
+
+.planets-list>div:last-child {
+    left: 600px;
+    top: 201px;
+}
+
+.planets-list>div>div:first-child {
+    width: 100%;
+    height: 200px;
+
+
+}
+
+.planets-list>div:first-child>div:first-child {
+    background: url('./assets/planets/sun.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.1);
+
+}
+
+.planets-list>div:nth-child(2)>div:first-child {
+    background: url('./assets/planets/mercury.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.planets-list>div:nth-child(3)>div:first-child {
+    background: url('./assets/planets/jupiter.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.planets-list>div:nth-child(4)>div:first-child {
+    background: url('./assets/planets/uranus.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.planets-list>div:nth-child(5)>div:first-child {
+    background: url('./assets/planets/venus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.planets-list>div:nth-child(6)>div:first-child {
+    background: url('./assets/planets/mars.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.planets-list>div:nth-child(7)>div:first-child {
+    background: url('./assets/planets/saturn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.planets-list>div:nth-child(8)>div:first-child {
+    background: url('./assets/planets/neptun.png');
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.planets-list>div:nth-child(9)>div:first-child {
+    background: url('./assets/planets/moon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(0.5);
+    z-index: 999;
+
+}
+
+.planets-list>div:last-child>div:first-child {
+    background: url('./assets/planets/earth.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(0.6);
+    z-index: 9999;
+
+}
+
+.planets-list>div>div:last-child span {
+    font-size: 31px;
+    white-space: nowrap;
+}
+
+.planets-list>div>div:last-child {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.moon-phases {
+
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.moon-phase-photo {
+    background: url('./assets/bg-images/moon-phase.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 557px;
+    height: 500px;
+    /* background-color: red; */
+    transition: .6s ease;
+}
+
+.moon-phase-photo:hover {
+    transform: scale(1.2);
+}
+
+
+.persons {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.persons>div {
+    width: 300px;
+    height: auto;
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 30px;
+
+}
+
+.persons>div>div:first-child {
+    margin: auto;
+}
+
+.persons>div>div:nth-child(2) {
+    color: #a4a4a4;
+    font-size: 23px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 300;
+
+}
+
+.persons>div>div:last-child {
+    color: #ffffff;
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+.persons>div:first-child>div:first-child {
+    background: url('./assets/people/1people-image.png');
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.persons>div:nth-child(2)>div:first-child {
+    background: url('./assets/people/2people-image.png');
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.persons>div:nth-child(3)>div:first-child {
+    background: url('./assets/people/3people-image.png');
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.about-mars {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 150px 0;
+}
+
+.mars-image {
+    width: 640px;
+    height: 640px;
+    background: url('./assets/bg-images/single-img-3.png');
+    background-size: cover;
+    transition: .3s ease;
+}
+
+.mars-image:hover {
+    transform: scale(1.1);
+}
+
+.last-person {
+    width: 100%;
+    height: auto;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.last-person>div>div:first-child {
+    transition: .5s;
+}
+
+.last-person>div>div:first-child:hover {
+    transform: scale(1.2)
+}
+
+.last-person>div {
+    display: flex;
+    width: auto;
+    height: auto;
+
+    flex-direction: column;
+    position: relative;
+}
+
+.last-person>div>div {
+    margin-bottom: 15px;
+}
+
+.last-person>div>div:nth-child(2) {
+    display: flex;
+    position: relative;
+}
+
+.last-person>div>div:nth-child(2)>div {
+    margin-right: 20px;
+}
+
+.last-person>div>div:nth-child(2)>div:first-child {
+    color: white;
+    font-size: 30px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.last-person>div>div:nth-child(2)>div:last-child {
+    color: white;
+    font-size: 20px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    line-height: 50px;
+}
+
+.last-person>div>div:nth-child(2)>div:first-child::after {
+    content: 'OCT';
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    top: 31px;
+    left: 0;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.last-person>div>div:nth-child(3) {
+    font-size: 20px;
+    width: 210px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-style: normal;
+    font-weight: 300;
+    color: #a4a4a4;
+    margin-left: 50px;
+}
+
+.last-person>div>div:last-child {
+    color: white;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 50px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.last-person>div:first-child>div:first-child {
+    background: url(./assets/blog/blog-img.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 358px;
+    height: 201px;
+}
+
+.last-person>div:nth-child(2)>div:first-child {
+    background: url(./assets/blog/blog-img-2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 358px;
+    height: 201px;
+}
+
+.last-person>div:last-child>div:first-child {
+    background: url(./assets/blog/blog-img-3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 358px;
+    height: 201px;
+}
+
+.registration {
+    width: 100%;
+    height: 400px;
+    background: url(./assets/bg-images/single-img-5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.registration>div:first-child {
+    margin-top: 19px;
+}
+
+.registration>div {
+    margin-right: 30px;
+}
+
+.registration label {
+    color: #a4a4a4;
+    font-size: 14px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+footer {
+    background-color: black;
+}
+
+.registration input {
+    border: none;
+    padding-bottom: 6px;
+}
+
+.registration input[type="text"] {
+    outline: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    width: 200px;
+    color: white;
+}
+
+.registration input[type="email"] {
+    outline: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    width: 200px;
+    color: white;
+}
+
+.registration input[type="submit"] {
+    background: transparent;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 3px;
+    transition: .4s;
+}
+
+.registration input[type="submit"]:hover {
+    color: gray
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+.footer-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-top: 1px solid white;
+    border-bottom: 1px solid rgb(148, 139, 139);
+    padding: 100px 0px;
+    flex-wrap: wrap;
+}
+
+.footer-box>div {
+    width: 400px;
+    height: auto;
+    margin: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer-box h2 {
+    font-size: 32px;
+}
+
+
+
+.footer-box>div>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+.footer-box>div:first-child>div:first-child {
+    font-size: 60px;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 100px;
+
+}
+
+
+.footer-box ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-box li {
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-box ol a {
+    text-decoration: none;
+}
+
+.footer-box a {
+    display: block;
+    padding: 10px;
+    transition: 0.4s;
+    color: #a4a4a4;
+}
+
+.footer-box a:hover {
+    color: white;
+}
+
+
+
+.mail {
+    width: auto;
+    height: auto;
+}
+
+.mail a {
+    text-decoration: none;
+    color: #a4a4a4;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
+}
+
+.footer-box h3 {
+    color: white;
+    font-size: 25px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    white-space: nowrap;
+}
+
+.footer-box>div:last-child input[type="submit"] {
+    outline: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+
+
+.footer-box>div>div:hover {
+    color: #ffffff;
+}
+
+
+.footer-box>div:last-child input[placeholder="MONTH"] {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #a4a4a4;
+    border-bottom: 1px solid #a4a4a4;
+    padding-bottom: 4px;
+    width: 200px;
+}
+
+
+.footer-box>div:last-child input[placeholder="DAY"] {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #a4a4a4;
+    border-bottom: 1px solid #a4a4a4;
+    padding-bottom: 4px;
+    width: 200px;
+}
+
+.mail:hover a {
+    color: #ffffff;
+}
+
+.mail-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(min-width:1200px) {
+    .logo {
+        width: 50%;
+    }
+    .About_Box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 100px 0;
+    }
+
+    .About_Box>div {
+        margin: 10px;
+    }
+
+    .mars-big-icon {
+        width: 400px;
+        height: 400px;
+        transform: scale(1.5);
+    }
+
+    .moon-main-image {
+        width: 400px;
+        height: 486px;
+    }
+
+    .moon {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .planets-list {
+        height: 1000px;
+    }
+
+    .planets-list>div:first-child {
+        transform: scale(0.9);
+        left: 1px;
+    }
+
+    .planets-list>div:nth-child(2) {
+        transform: scale(0.9);
+        left: 20%;
+    }
+
+    .planets-list>div:nth-child(3) {
+        transform: scale(0.7);
+        left: 55%;
+    }
+
+    .planets-list>div:nth-child(4) {
+        transform: scale(0.6);
+        left: 62%;
+        top: 230px;
+    }
+
+    .planets-list>div:nth-child(5) {
+        transform: scale(0.5);
+        left: 75%;
+        top: 300px;
+    }
+
+    .planets-list>div:nth-child(6) {
+        transform: scale(0.7);
+        top: 300px;
+        left: 5%;
+    }
+
+    .planets-list>div:nth-child(7) {
+        transform: scale(0.7);
+        left: 24%;
+        top: 400px;
+    }
+
+    .planets-list>div:nth-child(8) {
+        left: 54%;
+        top: 490px;
+    }
+
+    .planets-list>div:nth-child(9) {
+        transform: scale(0.5);
+        top: 280px;
+        left: 32%;
+    }
+
+    .planets-list>div:last-child {
+        left: 39%;
+    }
+
+    .persons {
+        padding: 70px 0;
+    }
+
+    .last-person {
+        padding: 60px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+   header {
+    padding: 20px 102px;
+   }
+.logo {
+    width: auto;
+}
+    .mars-image {
+        width: 400px;
+        height: 400px;
+    }
+
+    .About_Box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px 0;
+    }
+
+    .mars-big-icon {
+        width: 400px;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .main-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        left: 0;
+    }
+
+    .header-menu-btn .menu-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .moon {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .moon-main-image {
+        width: 300px;
+        height: 380px;
+    }
+
+
+
+    .planets-list>div:first-child {
+        transform: scale(0.7);
+        left: 0%;
+    }
+
+    .planets-list>div:nth-child(2) {
+        transform: scale(0.8);
+        left: 17%;
+    }
+
+    .planets-list>div:nth-child(3) {
+        transform: scale(0.4);
+        left: 50%;
+    }
+
+    .planets-list>div:nth-child(4) {
+        transform: scale(0.5);
+        left: 55%;
+        top: 230px;
+    }
+
+    .planets-list>div:nth-child(5) {
+        transform: scale(0.4);
+        left: 70%;
+        top: 300px;
+    }
+
+    .planets-list>div:nth-child(6) {
+        transform: scale(0.6);
+        top: 300px;
+        left: 2%;
+    }
+
+    .planets-list>div:nth-child(7) {
+        transform: scale(0.6);
+        left: 17%;
+        top: 400px;
+    }
+
+    .planets-list>div:nth-child(8) {
+        left: 54%;
+        transform: scale(0.6);
+        top: 490px;
+    }
+
+    .planets-list>div:nth-child(9) {
+        transform: scale(0.5);
+        top: 34%;
+        left: 24%;
+    }
+
+    .planets-list>div:last-child {
+        left: 32%;
+    }
+
+    body>header,
+    footer,
+    div {
+        overflow: hidden;
+    }
+
+    .about-mars {
+        padding: 150px 0;
+    }
+
+    .planets-list {
+        height: 800px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    
+header {
+    padding: 20px;
+}
+.contact-box {
+    align-items: center;
+    justify-content: center;
+}
+.contact-box > div {
+    width: auto;
+    height: auto;
+    margin: 20px;
+}
+    .mars-image {
+        width: 300px;
+        height: 300px;
+    }
+.logo {
+    width: 100%;
+    justify-content: center;
+}
+.menu li {
+    margin-right: 5%;
+    list-style: none;
+}
+.social-logo-box li {
+    margin: 2%;
+}
+.contact-box {
+    width: 100%;
+
+}
+    .mars-big-icon {
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-position: left -36px top 31px;
+    }
+
+    .About_Box {
+        padding: 10px;
+    }
+
+    .info>div:nth-child(2) {
+        font-size: 40px;
+    }
+
+    .moon {
+        padding: 20px;
+    }
+
+    .planets-list {
+        height: 740px;
+    }
+
+    .planets-list>div:first-child {
+        transform: scale(0.7);
+        left: 0%;
+    }
+
+    .planets-list>div:nth-child(2) {
+        transform: scale(0.8);
+        left: 17%;
+    }
+
+    .planets-list>div:nth-child(3) {
+        transform: scale(0.4);
+        left: 50%;
+    }
+
+    .planets-list>div:nth-child(4) {
+        transform: scale(0.5);
+        left: 55%;
+        top: 230px;
+    }
+
+    .planets-list>div:nth-child(5) {
+        transform: scale(0.4);
+        left: 70%;
+        top: 300px;
+    }
+
+    .planets-list>div:nth-child(6) {
+        transform: scale(0.6);
+        top: 300px;
+        left: 2%;
+    }
+
+    .planets-list>div:nth-child(7) {
+        transform: scale(0.6);
+        left: 17%;
+        top: 400px;
+    }
+
+    .planets-list>div:nth-child(8) {
+        left: 54%;
+        transform: scale(0.6);
+        top: 490px;
+    }
+
+    .planets-list>div:nth-child(9) {
+        top: 39%;
+        transform: scale(0.4);
+        left: 24%;
+    }
+
+    .planets-list>div:last-child {
+        left: 32%;
+    }
+
+    .last-person {
+        padding: 40px 10px;
+    }
+
+    .footer-box>div:nth-child(2)>div:first-child {
+        font-size: 20px;
+    }
+
+    .footer-box>div:nth-child(3)>div:first-child {
+        font-size: 20px;
+    }
+
+    .last-person>div:first-child>div:first-child {
+        width: 240px;
+        height: 140px;
+    }
+
+    .last-person>div:nth-child(2)>div:first-child {
+        width: 240px;
+        height: 140px;
+    }
+
+    .last-person>div:last-child>div:first-child {
+        width: 240px;
+        height: 140px;
+    }
+
+    .mars-big-icon {
+        transform: scale(0.5);
+    }
+
+    .footer-box>div:nth-child(2)>div {
+        font-size: 15px;
+    }
+
+    .footer-box>div:nth-child(3)>div {
+        font-size: 15px;
+    }
+
+    .footer-box>div:last-child>div:first-child {
+        font-size: 15px;
+    }
+
+    .footer-box>div:first-child>div:first-child {
+        font-size: 30px;
+    }
+
+    .footer-box>div:first-child {
+        margin-right: 10px;
+    }
+
+
+
+    .footer-box>div:last-child input[placeholder="MONTH"] {
+        width: 100%;
+    }
+
+    .footer-box>div:last-child input[placeholder="DAY"] {
+        width: 100%;
+    }
+
+    .moon-phases {
+        padding: 10px 30px;
+    }
+
+    .parent-hor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width:552px) and (max-width:768px) {
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+    .contact-box {
+        width: 100%;
+        justify-content: center;
+    }
+.menu-box {
+    align-items:  center;
+    justify-content: center;
+}
+    .logo:hover~.menu-box {
+        height: 240px;
+    }
+.menu-box {
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top:140px;
+    z-index: 99;
+    background-color: black;
+}
+header:hover .menu-box {
+    height: 240px;
+}
+.contact-box:hover~.menu-box {
+    height: 240px;
+}
+.menu-box:hover {
+    height: 240px;
+}
+
+.menu-box ul li {
+    margin-top: 20px;
+    text-align: center;
+}
+   .menu ul {
+    flex-direction: column;
+   }
+header {
+    padding: 20px;
+}
+    .About_Box {
+        flex-direction: column-reverse;
+    }
+
+    .parent-hor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .moon {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .planets-list {
+        height: 3000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .planets-list>div {
+        position: static;
+
+
+    }
+
+    .moon-main-image {
+        width: 259px;
+        height: 292px;
+    }
+
+    .planets-list>div:nth-child(7) {
+        height: 410px;
+
+    }
+
+    .planets-list>div:nth-child(9) {
+        height: 200px;
+    }
+
+    .planets-list>div:last-child {
+        height: 400px;
+    }
+
+    .mars-big-icon {
+        width: 315px;
+        height: 387px;
+    }
+
+    .moon-phases {
+        flex-direction: column;
+    }
+
+    .persons {
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .persons>div {
+        padding: 40px 0;
+    }
+
+    .about-mars {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mars-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .last-person {
+        flex-direction: column;
+    }
+
+    .last-person>div {
+        margin-bottom: 30px;
+    }
+
+    .registration {
+        flex-direction: column;
+    }
+
+    .registration>div {
+        margin-bottom: 30px;
+    }
+
+    .footer-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+@media (min-width:320px) and (max-width:552px) {
+    header {
+        padding: 0;
+    }
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }header:hover .menu-box {
+        height: 240px;
+    }
+.menu {
+    top:0;
+}
+    .contact-box {
+        width: 100%;
+        justify-content: center;
+    }
+    .logo:hover~.menu-box {
+        height: 240px;
+    }
+.menu-box {
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top:200px;
+    z-index: 99;
+    background-color: black;
+}
+.contact-box:hover~.menu-box {
+    height: 240px;
+}
+.menu-box:hover {
+    height: 240px;
+}
+.menu-box ul li {
+    margin-top: 20px;
+    text-align: center;
+}
+   .menu ul {
+    flex-direction: column;
+   }
+header {
+    padding: 20px;
+}
+    .About_Box {
+        flex-direction: column-reverse;
+    }
+
+    .mars-big-icon {
+        transform: scale(0.3);
+    }
+
+    .parent-hor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .moon {
+        flex-direction: column-reverse;
+    }
+.menu-box {
+    top:160px;
+}
+    .info {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info>div:nth-child(2) {
+        font-size: 30px;
+        word-spacing: 0
+    }
+
+    .info>div:nth-child(3) {
+        width: 200px;
+    }
+
+    .planets-list {
+        height: 3000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .planets-list>div {
+        height: 500px;
+        position: static;
+
+
+    }
+
+    .planets-list>div:nth-child(7) {
+        height: 410px;
+
+    }
+
+    .planets-list>div:nth-child(9) {
+        height: 200px;
+    }
+
+    .planets-list>div:last-child {
+        height: 400px;
+    }
+
+    .mars-big-icon {
+        width: 315px;
+        height: 387px;
+    }
+
+    .moon-phases {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .persons {
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .persons>div {
+        padding: 40px 0;
+    }
+
+    .about-mars {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mars-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .last-person {
+        flex-direction: column;
+    }
+
+    .last-person>div {
+        margin-bottom: 30px;
+    }
+
+    .registration {
+        flex-direction: column;
+    }
+
+    .registration>div {
+        margin-bottom: 30px;
+    }
+
+    .footer-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .last-person>div:first-child>div:first-child {
+        width: 100%;
+    }
+
+    .last-person>div:nth-child(2)>div:first-child {
+        width: 100%;
+    }
+
+    .last-person>div:last-child>div:first-child {
+        width: 100%;
+    }
+
+    .about-mars>div:last-child {
+        transform: scale(0.7)
+    }
+
+    .info-2 {
+        transform: scale(0.9);
+    }
+
+    .footer-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-box>div {
+        margin: 0;
+        width: 100%;
+    }
+
+    body>div,
+    section,
+    header,
+    footer {
+        overflow: hidden;
+    }
+}
